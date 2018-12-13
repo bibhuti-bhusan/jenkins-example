@@ -55,18 +55,17 @@
 
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>myMavenRepo.read</id>
-            <url>https://mymavenrepo.com/repo/FN8PIshHk5uALNhkXbhs/</url>
-        </repository>
-    </repositories>
-
     <distributionManagement>
         <repository>
-            <id>myMavenRepo.write</id>
-            <url>https://mymavenrepo.com/repo/9Q8JoRpymi4UGK8HzbVq/</url>
+            <id>my-nexus-repo</id>
+            <name> Release </name>
+            <url>http://192.168.1.252:8081/nexus/content/repositories/pipe/</url>
         </repository>
+        <snapshot-repository>
+            <id>my-nexus-repo</id>
+            <name> snapshot-Release </name>
+            <url>http://192.168.1.252:8081/nexus/content/repositories/pipe-snap/</url>
+        </snapshot-repository>
     </distributionManagement>
 
 </project>
